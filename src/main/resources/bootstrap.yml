@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: home
+  cloud:
+    config:
+      uri: http://127.0.0.1:8010
+      profile: dev
+      label: master
+      fail-fast: true
+      retry:
+        initial-interval: 1000
+        max-interval: 5000
+        multiplier: 1.5
+        max-attempts: 15
